@@ -7,7 +7,7 @@
   padding-bottom: 80px;
 
   @include media(desktop) {
-    padding-bottom: 150px;
+    padding-bottom: 140px;
     max-width: 1440px;
     margin: 0 auto;
     position: relative;
@@ -25,11 +25,6 @@
 }
 
 .about-title {
-  padding-left: 20px;
-
-  @include media(desktop) {
-    padding-left: 0;
-  }
 }
 
 .about-bg-img {
@@ -48,8 +43,8 @@
   @include media(desktop) {
     display: block;
     position: absolute;
-    left: 617px;
-    bottom: 141px;
+    left: 502px;
+    bottom: 140px;
   }
 }
 
@@ -59,7 +54,7 @@
     padding-right: 0;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: start;
+    justify-content: center;
     align-items: start;
     gap: 20px;
   }
@@ -77,11 +72,11 @@
 }
 
 .about-text {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Space Mono', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #000;
+  color: #fff;
   word-break: break-word;
 }
 
