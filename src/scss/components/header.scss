@@ -8,12 +8,13 @@
   z-index: 10;
 
   &.scrolled {
-    background: #cbed37;
+    background: #2f2656;
 
     .nav-list-link {
       &:hover,
+      &:active,
       &.active {
-        color: #f8a204;
+        color: #03daf7;
       }
     }
   }
@@ -40,6 +41,9 @@
 
   @include media(desktop) {
     display: block;
+    padding: 8px 12px;
+    backdrop-filter: blur(50px);
+    background: rgba(255, 255, 255, 0.03);
   }
 }
 
@@ -54,16 +58,13 @@
 }
 
 .nav-list-link {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Space Mono', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
-  color: #2e4c2f;
+  text-transform: uppercase;
+  color: #fff;
   transition: all 0.3s ease-in-out;
-}
-
-.nav-list-link.active {
-  color: #f8a204;
 }
 
 .privacy-body .nav-list-link {
@@ -73,9 +74,9 @@
 }
 
 .nav-btn {
-  background-color: transparent;
-  width: 48px;
-  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @include media(desktop) {
     display: none;

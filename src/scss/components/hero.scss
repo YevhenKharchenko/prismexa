@@ -2,8 +2,8 @@
 }
 
 .hero-bg-wrapper {
-  padding-top: 114px;
-  padding-bottom: 80px;
+  padding-top: 316px;
+  padding-bottom: 251px;
   background-image: url(../img/hero/hero-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: top center;
@@ -13,8 +13,8 @@
 
   @include media(desktop) {
     background-image: url(../img/hero/hero-bg-desk.jpg);
-    padding-top: 86px;
-    padding-bottom: 478px;
+    padding-top: 111px;
+    padding-bottom: 221px;
     max-width: 1440px;
   }
 }
@@ -32,22 +32,18 @@
 .hero-title-img {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 29px;
+  margin-bottom: 34px;
 
   @include media(desktop) {
-    margin-left: 0;
-    margin-bottom: 48px;
+    margin-bottom: 55px;
   }
 }
 
 .hero-btn-wrapper {
   display: flex;
   justify-content: center;
-  margin-bottom: 76px;
 
   @include media(desktop) {
-    margin-bottom: 0;
-    max-width: 650px;
   }
 }
 
@@ -55,23 +51,4 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.hero-basket-img {
-  @include media(desktop) {
-    position: absolute;
-    bottom: 178px;
-    right: 0;
-  }
-}
-
-.hero-sign-img {
-  display: none;
-
-  @include media(desktop) {
-    display: block;
-    position: absolute;
-    bottom: 150px;
-    left: 571px;
-  }
 }
